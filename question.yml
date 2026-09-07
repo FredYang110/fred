@@ -1,0 +1,17 @@
+name: Product or source question
+description: Ask a product or source-code question without requesting a change.
+title: "[Question]: "
+labels: ["type:question", "priority:p3", "status:triaged"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context and evidence already checked
+      description: Include source citations when available; do not include secrets.
+

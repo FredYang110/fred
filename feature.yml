@@ -1,0 +1,36 @@
+name: Feature request
+description: Request a new or changed user-facing capability.
+title: "[Feature]: "
+labels: ["type:feature", "priority:p2", "status:triaged"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请描述用户价值和可验收结果，而不是具体实现。不要粘贴凭证。
+  - type: textarea
+    id: problem
+    attributes:
+      label: User problem
+      description: Who has what problem in which situation?
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+      description: What should the user be able to observe when it succeeds?
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Initial scope and non-goals
+      description: What is in scope and explicitly out of scope?
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance signals
+      description: User-observable checks, not HTTP status codes or implementation details.
+    validations:
+      required: true
+

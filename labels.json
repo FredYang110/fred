@@ -1,0 +1,19 @@
+[
+  {"name":"type:bug","color":"d73a4a","description":"现有行为偏离预期"},
+  {"name":"type:feature","color":"a2eeef","description":"新增或改变用户可感知能力"},
+  {"name":"type:question","color":"d876e3","description":"产品或源码咨询，不一定需要变更"},
+  {"name":"priority:p0","color":"b60205","description":"阻断、安全或数据风险"},
+  {"name":"priority:p1","color":"d93f0b","description":"核心路径严重受损"},
+  {"name":"priority:p2","color":"fbca04","description":"重要但存在替代方案"},
+  {"name":"priority:p3","color":"0e8a16","description":"一般改进或待澄清"},
+  {"name":"status:triaged","color":"c5def5","description":"已分流，等待下一步"},
+  {"name":"status:needs-prd","color":"bfdadc","description":"已认领，等待或正在补 PRD"},
+  {"name":"status:in-review","color":"5319e7","description":"等待评审"},
+  {"name":"status:changes-requested","color":"e99695","description":"评审已打回，等待修订"},
+  {"name":"status:ready","color":"0e8a16","description":"PRD 已通过评审，可进入实现"},
+  {"name":"status:closed","color":"ededed","description":"流程已结束"},
+  {"name":"resolution:fixed","color":"0e8a16","description":"有修复证据后关闭"},
+  {"name":"resolution:duplicate","color":"cfd3d7","description":"重复需求"},
+  {"name":"resolution:wontfix","color":"ffffff","description":"明确决定不做"},
+  {"name":"resolution:cannot-reproduce","color":"fef2c0","description":"当前无法复现"}
+]

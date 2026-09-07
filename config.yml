@@ -1,0 +1,6 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Product Steward operating rules
+    url: https://github.com/OWNER/REPOSITORY/blob/main/AGENTS.md
+    about: Read the evidence, privacy, PRD, and lifecycle rules before filing.
+

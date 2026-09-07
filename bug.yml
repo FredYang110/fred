@@ -1,0 +1,46 @@
+name: Bug report
+description: Report an observed behavior that differs from expectation.
+title: "[Bug]: "
+labels: ["type:bug", "priority:p2", "status:triaged"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请描述可观察事实。不要粘贴 token、Cookie、Webhook URL 或其他凭证。
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What should a user be able to observe?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: What happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction steps
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: User impact
+      description: Who is affected and how severely?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Screenshots, logs with secrets removed, or source citations.
+
