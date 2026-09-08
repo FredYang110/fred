@@ -14,7 +14,7 @@
 1. 在 GitHub 建立一个 **public** 空仓库，例如 `octo-product-steward`，并将本目录推送为 `main`。
 2. 在 Octo 考试群创建一个 Incoming Webhook。创建时将“主考”和本 Agent 配为定向 @ 目标；保存其 native URL 到 GitHub Actions Secret `OCTO_WEBHOOK_URL_ACTIVE`。URL/Token 绝不能进入代码、Issue 或群消息。
 3. 在仓库 Actions 页面手动运行 `Bootstrap labels` 一次。它只创建或更新本项目需要的标签。
-4. 在仓库 Settings → Webhooks 新增一个 Webhook：Payload URL 使用步骤 2 所获 URL 的 `/github` 后缀，Content type 为 `application/json`；订阅 Issues、Issue comments 和 Pull requests。Octo-server 原生支持该 GitHub 适配器。
+4. 可选：只有需要把 GitHub 原始事件全文直接转发到群时，才在仓库 Settings → Webhooks 配置该 URL 的 `/github` 适配器。本考核方案以 `Issue sweep` 为唯一通知链路，不同时启用原始事件 Webhook，以免评论等非状态变化制造重复噪声。
 5. 在 Actions 页面手动运行 `Issue sweep` 一次建立基线；第二次及之后的定时运行才会就新增或状态变化通知群内。
 6. 用 [`AGENTS.md`](AGENTS.md) 作为你部署平台（Claude Code / OpenClaw / Hermes）的系统指令，创建并接入同一个 Octo Bot 身份。测试它能在群内回复并能创建 GitHub Issue 后，保留最近几次 Actions 运行记录供考核。
 
