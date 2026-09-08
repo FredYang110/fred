@@ -3,7 +3,7 @@
 ## 接入
 
 1. 请群管理员创建一个供产品管家使用的 Bot 身份，并在你选择的平台中配置它。将 [`AGENTS.md`](../../AGENTS.md) 作为系统指令，并把只读 `octo-server` 源码目录挂为知识源。
-2. 在考试群创建 Incoming Webhook。把主考和产品管家 Bot 加入 webhook 的定向 @ 列表；Webhook 的 token 只保存在 GitHub Actions Secret `OCTO_WEBHOOK_URL`。
+2. 在考试群创建 Incoming Webhook。把主考和产品管家 Bot 加入 webhook 的定向 @ 列表；Webhook 的 token 只保存在 GitHub Actions Secret `OCTO_WEBHOOK_URL_ACTIVE`。
 3. 将 `OCTO_WEBHOOK_URL` 放入需求池仓库的 Actions Secret。不要把它写入 workflow、Issue、日志或群消息。
 4. 将该 URL 加 `/github` 后缀，在 GitHub Settings → Webhooks 中订阅 Issues、Issue comments、Pull requests。这个适配器是目标服务的已有能力：GitHub webhook 路径、事件头与输入格式由 `modules/incomingwebhook/adapter_github.go` 定义。来源: `modules/incomingwebhook/adapter_github.go#L3-L20`
 5. 启用 `Issue sweep`。它每 10 分钟检查状态和标签变化，只有变化才调用 native Webhook 发一条简明回报。
@@ -19,4 +19,3 @@
 ## 证据留存
 
 考前保留：公开需求池链接、最近几次 GitHub Actions 定时运行记录、一张完整 PRD/Review Issue，以及一条带可核验行号的群内问答。不要截图或提交任何密钥。
-
