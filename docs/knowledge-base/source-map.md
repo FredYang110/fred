@@ -29,7 +29,7 @@
 ## 4. 业务模块清单
 
 - 模块以 blank import 注册，实际启用清单应以 `internal/modules.go` 为准，而不是 README 架构图。来源: `internal/modules.go#L1-L13`
-- 其中包括基础、消息、群组、Space、用户、文件、搜索、通知、OIDC、Webhook、Bot API、App Bot、Bot Provision 等模块。来源: `internal/modules.go#L20-L84`
+- 其中包括基础、消息、群组、Space、用户、文件、搜索、通知、OIDC、Webhook、Bot API、App Bot、Bot Provision 等模块。来源: `internal/modules.go#L20-L82`
 - `runtime` 模块已移除，Bot 运行时/编排归 `octo-fleet`；不要把历史 README 或旧路径当作当前实现。来源: `internal/modules.go#L42-L47`
 - 标准模块通常在 `1module.go` 注册 API 和嵌入式 SQL 迁移；例如 `app_bot`。来源: `modules/app_bot/1module.go#L1-L23`
 
@@ -65,4 +65,3 @@
 - `Dockerfile.ghcr` 是已编译的 `linux_${TARGETARCH}` binary 打包到 Debian 运行镜像，不负责编译源码。来源: `Dockerfile.ghcr#L1-L17`
 - `make build` 等价于 `docker build -t octo-server .`；旧 push/deploy 目标包含遗留私有仓库配置，文档明确不应作为正式发布面。来源: `Makefile#L1-L13`、`BUILDING.md#L43-L62`
 - 全量运行栈（WuKongIM、MySQL、Redis、MinIO、nginx、compose/Helm）由 `octo-deployment` 维护；本仓库旧 compose 栈已退役。来源: `BUILDING.md#L33-L41`、`BUILDING.md#L49-L55`
-
