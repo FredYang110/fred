@@ -72,11 +72,37 @@
       "title": "小助理无法创建多个分身",
       "url": "https://github.com/FredYang110/fred/issues/6",
       "state": "open",
-      "updatedAt": "2026-09-08T07:11:28Z",
+      "updatedAt": "2026-09-08T09:19:32Z",
       "labels": {
         "type:": "type:bug",
         "priority:": "priority:p3",
         "status:": "status:triaged",
+        "resolution:": null
+      }
+    },
+    "7": {
+      "number": 7,
+      "title": "/revoke 换 token 后旧 bf_ token 在 Redis 缓存 TTL 内仍可用",
+      "url": "https://github.com/FredYang110/fred/issues/7",
+      "state": "closed",
+      "updatedAt": "2026-09-08T11:15:05Z",
+      "labels": {
+        "type:": "type:bug",
+        "priority:": null,
+        "status:": "status:ready",
+        "resolution:": null
+      }
+    },
+    "8": {
+      "number": 8,
+      "title": "Incoming webhook GitHub 适配器强制校验 X-Hub-Signature-256",
+      "url": "https://github.com/FredYang110/fred/issues/8",
+      "state": "closed",
+      "updatedAt": "2026-09-08T11:15:08Z",
+      "labels": {
+        "type:": "type:feature",
+        "priority:": null,
+        "status:": "status:ready",
         "resolution:": null
       }
     }
