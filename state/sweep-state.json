@@ -1,5 +1,32 @@
 {
   "schemaVersion": 1,
   "initializedAt": "2026-09-07T14:13:37.227Z",
-  "issues": {}
+  "issues": {
+    "1": {
+      "number": 1,
+      "title": "[演练] 群内反馈处理状态可追踪",
+      "url": "https://github.com/FredYang110/fred/issues/1",
+      "state": "open",
+      "updatedAt": "2026-09-08T02:27:51Z",
+      "labels": {
+        "type:": "type:feature",
+        "priority:": "priority:p2",
+        "status:": "status:triaged",
+        "resolution:": null
+      }
+    },
+    "2": {
+      "number": 2,
+      "title": "[演练] 群内反馈处理状态可追踪",
+      "url": "https://github.com/FredYang110/fred/issues/2",
+      "state": "closed",
+      "updatedAt": "2026-09-08T02:36:06Z",
+      "labels": {
+        "type:": "type:feature",
+        "priority:": "priority:p2",
+        "status:": "status:ready",
+        "resolution:": null
+      }
+    }
+  }
 }
