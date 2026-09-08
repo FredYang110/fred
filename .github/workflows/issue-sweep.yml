@@ -22,7 +22,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ github.token }}
           GITHUB_REPOSITORY: ${{ github.repository }}
-          OCTO_WEBHOOK_URL: ${{ secrets.OCTO_WEBHOOK_URL_ROTATED }}
+          OCTO_WEBHOOK_URL: ${{ secrets.OCTO_WEBHOOK_URL_ACTIVE }}
         run: node scripts/sweep-issues.mjs
       - name: Persist the new scan baseline
         run: |
