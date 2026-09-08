@@ -12,7 +12,7 @@
 ## 首次接入（按顺序完成）
 
 1. 在 GitHub 建立一个 **public** 空仓库，例如 `octo-product-steward`，并将本目录推送为 `main`。
-2. 在 Octo 考试群创建一个 Incoming Webhook。创建时将“主考”和本 Agent 配为定向 @ 目标；保存其 native URL 到 GitHub Actions Secret `OCTO_WEBHOOK_URL`。URL/Token 绝不能进入代码、Issue 或群消息。
+2. 在 Octo 考试群创建一个 Incoming Webhook。创建时将“主考”和本 Agent 配为定向 @ 目标；保存其 native URL 到 GitHub Actions Secret `OCTO_WEBHOOK_URL_ACTIVE`。URL/Token 绝不能进入代码、Issue 或群消息。
 3. 在仓库 Actions 页面手动运行 `Bootstrap labels` 一次。它只创建或更新本项目需要的标签。
 4. 在仓库 Settings → Webhooks 新增一个 Webhook：Payload URL 使用步骤 2 所获 URL 的 `/github` 后缀，Content type 为 `application/json`；订阅 Issues、Issue comments 和 Pull requests。Octo-server 原生支持该 GitHub 适配器。
 5. 在 Actions 页面手动运行 `Issue sweep` 一次建立基线；第二次及之后的定时运行才会就新增或状态变化通知群内。
@@ -23,4 +23,3 @@
 ## 本地源码位置
 
 知识地图按 `octo-server` 仓库根目录引用路径。当前工作区中，该只读源码位于相邻的 `../octo-server`；部署 Agent 时请把实际克隆目录设为它的只读知识源。
-
