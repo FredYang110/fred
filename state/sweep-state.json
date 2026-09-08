@@ -6,13 +6,13 @@
       "number": 1,
       "title": "[演练] 群内反馈处理状态可追踪",
       "url": "https://github.com/FredYang110/fred/issues/1",
-      "state": "open",
-      "updatedAt": "2026-09-08T02:27:51Z",
+      "state": "closed",
+      "updatedAt": "2026-09-08T02:53:42Z",
       "labels": {
         "type:": "type:feature",
         "priority:": "priority:p2",
-        "status:": "status:triaged",
-        "resolution:": null
+        "status:": "status:closed",
+        "resolution:": "resolution:duplicate"
       }
     },
     "2": {
